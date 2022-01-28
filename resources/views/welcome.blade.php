@@ -41,7 +41,7 @@
             </div>
                 @foreach($employee->children as $child1)
                     <div class="wrapper__children">
-                        <input type="checkbox" checked> {{$child1->firstname}} {{$child1->lastname}} ({{$child1->designation}})
+                        <input type="checkbox" checked> {{$child1->firstname}} ({{$child1->designation}})
                         @foreach($child1->children as $child2)
                             <div class="wrapper__children">
                                 <input type="checkbox" checked> {{$child2->firstname}} {{$child2->lastname}} ({{$child2->designation}})
